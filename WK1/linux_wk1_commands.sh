@@ -89,17 +89,17 @@ sudo -u $USERNAME whoami
 echo "***** Deleting everything to clear environment *****"
 userdel $USERNAME
 
-# 10) Query last some user has been logged in
+# 10- Query last some user has been logged in
 echo "***** Query last some user has been logged in *****"
 echo "Login as a user already created and run the command -> lastlog"
 
-# 11) Modify the expiration date of a user
+# 11- Modify the expiration date of a user
 echo "***** Modify the expiration date of a user *****"
 echo "See the details from a User with command: chage -l $USERNAME"
 echo "Change the date of expiration with command: chage -E 2017-02-14 $USERNAME"
 echo "See the details changed from a User with command: chage -l $USERNAME"
 
-# 12) Change multiple user passwords
+# 12- Change multiple user passwords
 echo "***** Change multiple user passwords *****"
 echo "First write the command: chpasswd and press ENTER"
 echo "Add a line with: $USERNAME:$PASSWORD and press ENTER"
@@ -107,12 +107,12 @@ echo "Add a line with: $SECONDUSERNAME:$PASSWORD and press ENTER"
 echo "Press keys control + d"	
 echo "Execute login command with the two users and passwords to check if they are working"
 
-# 13) Modify some information of the user
+# 13- Modify some information of the user
 echo "***** Modify some information of the user *****"
 echo "Change USERNAME running the command: usermod -l $NEWUSERNAME $OLDUSERNAME"
 echo "Verify that you can log in as $NEWUSERNAME excecuting the command: login $NEWUSERNAME"
 
-# 14) As an admin show who is logged in
+# 14- As an admin show who is logged in
 echo "***** As an admin show who is logged in *****"
 echo "As a root run the command: login $USERNAME"
 echo "Open a new terminal and log in as a root"
